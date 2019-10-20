@@ -1,0 +1,8 @@
+scan_networks AT+CWLAP?
+connect_network AT+CWJAP="my-test-wifi","1234test" 
+firmware_version AT+GMR
+client+router AT+CWMODE=3 
+network_name+password AT+CWSAP="SMART_TRASH_CAN","1A92ER22",11,2
+disconnect_network AT+CWQAP
+get_ip AT+CIPAP?
+status AT+CIPSTATUS=?
