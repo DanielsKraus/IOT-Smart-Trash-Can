@@ -16,4 +16,4 @@ Installation instructions
       
 #### Warning: if using ESP8266 esp-01 input voltage is 3.3v
 
-*Fauxmo is required to spoof the gen3 Amazon Alexa/Echo.
+*Fauxmo is required to spoof the Amazon Alexa/Echo.
