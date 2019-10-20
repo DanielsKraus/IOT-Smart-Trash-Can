@@ -13,3 +13,7 @@ Installation instructions
       Go to your **sketch** tab, scroll down to **include Library**, then click **Manage Libraries...**. Type in the search box **ESP8266WiFi**, then install the latest version. Repeat the same steps for **FauxmoESP**.
       
       
+      
+#### Warning: if using ESP8266 esp-01 input voltage is 3.3v
+
+*Fauxmo is required to spoof the gen3 Amazon Alexa/Echo.
