@@ -3,11 +3,11 @@
 #include "fauxmoESP.h"
  
 #define WIFI_SSID "yournetwork"
-#define WIFI_PASS "yourpassword"
+#define WIFI_PASS "youpassword"
 #define SERIAL_BAUDRATE 115200
 
-#define open_btn 1
-#define close_btn 2
+#define open_btn 2
+#define close_btn 3
  
 fauxmoESP fauxmo;
  
@@ -18,14 +18,14 @@ void open_trash()
 {
   Serial.println("OPEN");
   digitalWrite(open_btn,HIGH);
-  delay(10);
+  delay(500);
   digitalWrite(open_btn,LOW);
 }
 void close_trash()
 {
   Serial.println("CLOSE");
   digitalWrite(close_btn,HIGH);
-  delay(10);
+  delay(500);
   digitalWrite(close_btn,LOW);
 }
 void wifiSetup() {
@@ -69,7 +69,7 @@ void setup() {
   
   fauxmo.onSetState([](unsigned char device_id, const char * device_name, bool state, unsigned char value) {
     Serial.print("Device: ");Serial.print(device_name);
-    Serial.print(" state");
+    Serial.print("  state: ");
     if(state)
       open_trash();
     else
