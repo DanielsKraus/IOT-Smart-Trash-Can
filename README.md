@@ -1,5 +1,5 @@
 ## IOT-Smart-Trash-Can
-D1 Mini NodeMCU made into a home automation device for opening and closing of the lid of a trash can via voice commands utilizing Amazon Alexa/Echo.
+D1 Mini NodeMCU made into a home automation device for opening and closing of the lid of a trash can via voice commands utilizing Amazon Alexa/Echo.  The trash can already has an electronic push button for opening and closing of the lid.  The microcontroller will just take the state coming from the wifi **ON** or **OFF** and turn on a pin to it's corresponding area to trigger the switch to simulate pushing of the button.  
 
 Installation instructions
   1. Clone this repository and navigate to the downloaded folder.
